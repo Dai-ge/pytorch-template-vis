@@ -1,0 +1,14 @@
+pyyaml=6.0=py39h2bbff1b_1
+scikit-image=0.19.2=py39hf11a4ad_0
+scikit-learn=1.0.2=py39hf11a4ad_1
+scikit-learn-intelex=2021.5.0=py39haa95532_0
+scipy=1.7.3=py39h0a974cb_0
+tensorboard=2.10.0=pyhd8ed1ab_2
+tensorboard-data-server=0.6.0=py39hcbf5309_2
+tensorboard-plugin-wit=1.8.1=pyhd8ed1ab_0
+torch-tb-profiler=0.4.0=pypi_0
+torchaudio=0.12.1=py39_cu113
+torchvision=0.13.1=py39_cu113
+tqdm=4.64.0=py39haa95532_0
+yaml=0.2.5=he774522_0
+torchsummary #TODO: Considering how to use torchsummary as default print methods

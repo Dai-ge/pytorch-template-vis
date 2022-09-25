@@ -1,0 +1,43 @@
+model_name: STCoordNet #change the model name will also affect the name of loss file
+mode: train # train, debug or inf
+
+
+#GPU setting
+CRC_setting:
+  model_setting:
+    init: 128 #init features
+    num_res: 10 #number of res blocks
+
+  train_setting:
+    lr: 1.0e-5 #init learning rate
+    log_dir: '../Exp/'
+    num_epochs: 500
+    checkpoints: 50
+
+  data_setting:
+    dataset: Cylinder #Tangaroa ionization Vortex Jet Cylinder the name of the dataset
+    batch_size: 120000 # the batch size
+    interval: 3 # The interval for interpolating
+    scale: 4 # The Downsmapling Scale
+    var: '160' # The variable used for training
+    croptimes: 4 #the number of crops for a pair of data
+
+#GPU setting
+Local_setting:
+  model_setting:
+    init: 128 #init features
+    num_res: 10 #number of res blocks
+
+  train_setting:
+    lr: 1.0e-5 #init learning rate
+    log_dir: '../Exp/'
+    num_epochs: 500
+    checkpoints: 50
+
+  data_setting:
+    dataset: Cylinder #Tangaroa ionization Vortex Jet Cylinder the name of the dataset
+    batch_size: 120000 # the batch size
+    interval: 3 # The interval for interpolating
+    scale: 4 # The Downsmapling Scale
+    var: '160' # The variable used for training
+    croptimes: 4 #the number of crops for a pair of data

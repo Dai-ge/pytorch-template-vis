@@ -1,0 +1,14 @@
+#!/bin/csh
+#$ -M dullpigeon@gmail.com
+#$ -q gpu@qa-p100-001 -l gpu=1
+#$ -m abe
+#$ -r y
+#$ -N STCoordNet
+
+cd ..
+
+module use -a ~/privatemodules
+module load tky_pytorch
+
+python3 main.py
+
