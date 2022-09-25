@@ -1,7 +1,13 @@
 import utils
 import modules
+import numpy as np
 
 
 
 if __name__ == "__main__":
-    print(utils.get_timestamp())
+    x = np.arange(255*255).reshape(255)
+   
+    
+    
+    
+    
